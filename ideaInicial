@@ -1,0 +1,45 @@
+¿Embeber todo?
+
+clientes:{
+	dni:
+	atracciones_visitadas:{
+		idAtraccion:
+		nombre:
+	}
+
+}
+
+eventos:{
+	facturas:[{
+		importe:
+	}]
+	visitas:[{
+		dni:
+		importe:
+	}]
+	suma_facturacion:(?)
+}
+
+parque:{
+	atracciones:[{
+		visitas:[{
+			dni:
+			importe:
+		}]
+		totalImporte:(?)
+		cantVisitas:(?)
+	}]
+	visitas:[{
+		dni:
+		importe:
+	}]
+}
+
+factura:{
+	clientId:
+	entradas:[{
+		idEntrada:
+		importe:
+	}]
+	importeTotal:(?)
+}
