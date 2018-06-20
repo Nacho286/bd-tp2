@@ -17,7 +17,7 @@ eventos:{
 		dni:
 		importe:
 	}]
-	suma_facturacion:(?)
+	suma_facturacion:(?) ----PODEMOS SACAR ESTO Y HACER EL MAP-REDUCE EN 'visitas' PARA OBTENER LA FACTURACION
 }
 
 parque:{
@@ -26,8 +26,8 @@ parque:{
 			dni:
 			importe:
 		}]
-		totalImporte:(?)
-		cantVisitas:(?)
+		totalImporte:(?) ----PODEMOS SACAR ESTO Y HACER EL MAP-REDUCE EN 'visitas' PARA OBTENER LA FACTURACION
+		cantVisitas:(?) ----PODEMOS SACAR ESTO Y HACER EL MAP-REDUCE EN 'visitas' PARA OBTENER LA CANTIDAD DE VISITAS
 	}]
 	visitas:[{
 		dni:
