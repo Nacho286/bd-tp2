@@ -1,0 +1,159 @@
+\section{Diseño lógico}
+
+\par A continuación vamos a incluir los esquemas json que armamos en base a los diagramas de diseño y explicaremos cómo obtuvimos los datos que se incluyen en cada documento.
+
+\subsection{Cliente}
+\par Lo que hicimos fue embeber los datos de las atracciones visitadas (por medio de las entradas registradas) junto con la fecha de la entrada.
+De esta manera podemos consultar las atracciones que visitó un cliente de forma simple y rápida.
+\begin{verbatim}
+{
+  "type": "object",
+  "properties": {
+    "dni": "integer",
+    "nombre": "string",
+    "apellido": "string",
+    "direccion": "string",
+    "telefono": "string",
+    "atraccionesVisitadas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "idAtraccion": "integer",
+          "nombre": "string",
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    }
+  }
+}
+\end{verbatim}
+
+\subsubsection{Evento}
+\par Lo que hicimos fue embeber Evento y Entrada en Locacion, para tener en la misma estructura todos los eventos y sus visitas.
+Así podremos consultar por un evento y obtener las visitas, con fecha, que tuvo.
+\begin{verbatim}
+{
+  "type": "object",
+  "properties": {
+    "idLocacion": "integer",
+    "nombre": "string",
+    "cuitEmpresa": "integer",
+    "fechaInicio": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "fechaFin": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "visitas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "idEntrada": "integer",
+          "dni": "integer",
+          "precio": "integer",
+          "numeroDeTarjeta": "integer",
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    }
+  }
+}
+\end{verbatim}
+
+\subsubsection{Parque}
+\par Lo que hicimos fue embeber Entrada en Atracción y luego Atracción en Parque. Para lograr tener las atracciones (y las entradas a esas atracciones) en los parques.
+Luego embebimos Parque en Locación y Entrada en Locación. De esta forma tenemos, además de lo antes mencionado, las entradas a los parques incluidas.
+\par Con esto podemos consultar diréctamente por un parque y obtener sus datos informativos, sus visitas (con fecha) y atracciones (con visitas a ellas).
+\begin{verbatim}
+{
+  "type": "object",
+  "properties": {
+    "idLocacion": "integer",
+    "precio": "integer",
+    "atracciones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "idAtraccion": "integer",
+          "nombre": "string",
+          "precio": "integer",
+          "minimoEdad": "integer",
+          "minimoAltura": "integer",
+          "visitas": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "idEntrada": "integer",
+                "dni": "integer",
+                "precio": "integer",
+                "numeroDeTarjeta": "integer",
+                "fecha": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              }
+            }
+          },
+          "totalImporte": "integer",
+          "cantidadVisitas": "integer"
+        }
+      }
+    },
+    "visitas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "idEntrada": "integer",
+          "dni": "integer",
+          "precio": "integer",
+          "numeroDeTarjeta": "integer",
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    }
+  }
+}
+\end{verbatim}
+
+\subsubsection{Factura}
+\par Lo que hicimos en este caso fue embeber Entrada en Factura. De esta manera consultamos una factura y tenemos el monto total y los ids de entradas para poder asociar luego.
+\begin{verbatim}
+{
+  "type": "object",
+  "properties": {
+    "numeroDeFactura": "integer",
+    "dni": "integer",
+    "fecha": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "monto": "integer",
+    "entradas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "idEntrada": "integer",
+          "precio": "integer"
+        }
+      }
+    }
+  }
+}
+\end{verbatim}

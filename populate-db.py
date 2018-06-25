@@ -83,13 +83,13 @@ r.table('eventos').insert({
     'visitas': [{
         'idEntrada': 9,
         'dni': 24356543,
-        'importe': 1000,
+        'precio': 1000,
         'numeroDeTarjeta': 2,
         'fecha': '2017-04-04 08:00:00'
     }, {
         'idEntrada': 10,
         'dni': 24356543,
-        'importe': 1000,
+        'precio': 1000,
         'numeroDeTarjeta': 2,
         'fecha': '2017-04-05 08:00:00'
     }],
@@ -104,7 +104,7 @@ r.table('eventos').insert({
     'visitas': [{
         'idEntrada': 14,
         'dni': 28123456,
-        'importe': 400,
+        'precio': 400,
         'numeroDeTarjeta': 7,
         'fecha': '2018-04-28 21:15:00'
     }],
@@ -125,19 +125,19 @@ r.table('parques').insert({
         'visitas': [{
             'idEntrada': 2,
             'dni': 13241345,
-            'importe': 50,
+            'precio': 50,
             'numeroDeTarjeta': 1,
             'fecha': '2017-01-16 11:30:00'
         }, {
             'idEntrada': 3,
             'dni': 13241345,
-            'importe': 50,
+            'precio': 50,
             'numeroDeTarjeta': 1,
             'fecha': '2017-01-16 13:00:00'
         }, {
             'idEntrada': 6,
             'dni': 13241345,
-            'importe': 60,
+            'precio': 60,
             'numeroDeTarjeta': 4,
             'fecha': '2017-02-17 11:45:00'
         }],
@@ -152,19 +152,19 @@ r.table('parques').insert({
         'visitas': [{
             'idEntrada': 5,
             'dni': 13241345,
-            'importe': 20,
+            'precio': 20,
             'numeroDeTarjeta': 4,
             'fecha': '2017-02-17 11:00:00'
         }, {
             'idEntrada': 7,
             'dni': 13241345,
-            'importe': 20,
+            'precio': 20,
             'numeroDeTarjeta': 4,
             'fecha': '2017-02-17 15:00:00'
         }, {
             'idEntrada': 8,
             'dni': 13241345,
-            'importe': 20,
+            'precio': 20,
             'numeroDeTarjeta': 4,
             'fecha': '2017-02-17 15:10:00'
         }],
@@ -174,13 +174,13 @@ r.table('parques').insert({
     'visitas': [{
         'idEntrada': 1,
         'dni': 13241345,
-        'importe': 100,
+        'precio': 100,
         'numeroDeTarjeta': 1,
         'fecha': '2017-01-16 10:50:00'
     }, {
         'idEntrada': 4,
         'dni': 13241345,
-        'importe': 100,
+        'precio': 100,
         'numeroDeTarjeta': 4,
         'fecha': '2017-02-17 09:35:00'
     }]
@@ -198,7 +198,7 @@ r.table('parques').insert({
         'visitas': [{
             'idEntrada': 12,
             'dni': 32333444,
-            'importe': 60,
+            'precio': 60,
             'numeroDeTarjeta': 3,
             'fecha': '2018-04-25 10:10:00'
         }],
@@ -213,7 +213,7 @@ r.table('parques').insert({
         'visitas': [{
             'idEntrada': 13,
             'dni': 32333444,
-            'importe': 40,
+            'precio': 40,
             'numeroDeTarjeta': 3,
             'fecha': '2018-04-25 10:50:00'
         }],
@@ -223,7 +223,7 @@ r.table('parques').insert({
     'visitas': [{
         'idEntrada': 11,
         'dni': 32333444,
-        'importe': 300,
+        'precio': 300,
         'numeroDeTarjeta': 3,
         'fecha': '2018-04-25 09:00:00'
     }]
@@ -237,13 +237,13 @@ r.table('facturas').insert({
     'monto': 210,
     'entradas': [{
         'idEntrada': 1,
-        'importe': 100
+        'precio': 100
     }, {
         'idEntrada': 2,
-        'importe': 50
+        'precio': 50
     }, {
         'idEntrada': 3,
-        'importe': 50
+        'precio': 50
     }]
 }).run()
 r.table('facturas').insert({
@@ -253,19 +253,19 @@ r.table('facturas').insert({
     'monto': 220,
     'entradas': [{
         'idEntrada': 4,
-        'importe': 100
+        'precio': 100
     }, {
         'idEntrada': 5,
-        'importe': 20
+        'precio': 20
     }, {
         'idEntrada': 6,
-        'importe': 60
+        'precio': 60
     }, {
         'idEntrada': 7,
-        'importe': 20
+        'precio': 20
     }, {
         'idEntrada': 8,
-        'importe': 20
+        'precio': 20
     }]
 }).run()
 r.table('facturas').insert({
@@ -275,10 +275,10 @@ r.table('facturas').insert({
     'monto': 2000,
     'entradas': [{
         'idEntrada': 9,
-        'importe': 1000
+        'precio': 1000
     }, {
         'idEntrada': 10,
-        'importe': 1000
+        'precio': 1000
     }]
 }).run()
 

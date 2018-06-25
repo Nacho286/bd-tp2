@@ -1,0 +1,40 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\usepackage{color}
+\usepackage{ulem}
+\usepackage{src/caratula}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\lhead{Bases de Datos}
+\rhead{Trabajo Práctico 2 - Grupo 13}
+
+\begin{document}
+
+\fecha{\today}
+\materia{Base de Datos}
+\titulo{Trabajo Práctico II}
+
+\integrante{Lautaro Leonel Alvarez}{268/14}{lautarolalvarez@gmail.com}
+\integrante{Ignacio Rodriguez}{797/13}{igna.r286@gmail.com}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\input{introduccion}
+\input{did}
+\newpage
+\input{schemes}
+\input{concluciones}
+
+\end{document}
