@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 import rethinkdb as r
-import json
 tablelist = ['clientes', 'facturas', 'eventos', 'parques']
 
 r.connect('localhost', 28015, db='tp2').repl()
@@ -15,26 +14,32 @@ r.table('clientes').insert({
     'direccion': 'Calle Falsa 123, CABA',
     'telefono': '4444-4444',
     'atraccionesVisitadas': [{
+        'idEntrada': 2,
         'idAtraccion': 1,
         'nombre': 'Tazas Locas',
         'fecha': '2017-01-16 11:30:00'
     }, {
+        'idEntrada': 3,
         'idAtraccion': 1,
         'nombre': 'Tazas Locas',
         'fecha': '2017-01-16 13:00:00'
     }, {
+        'idEntrada': 5,
         'idAtraccion': 2,
         'nombre': 'Samba',
         'fecha': '2017-02-17 11:00:00'
     }, {
+        'idEntrada': 6,
         'idAtraccion': 1,
         'nombre': 'Tazas Locas',
         'fecha': '2017-02-17 11:45:00'
     }, {
+        'idEntrada': 7,
         'idAtraccion': 2,
         'nombre': 'Samba',
         'fecha': '2017-02-17 15:00:00'
     }, {
+        'idEntrada': 8,
         'idAtraccion': 2,
         'nombre': 'Samba',
         'fecha': '2017-02-17 15:20:00'
@@ -55,10 +60,12 @@ r.table('clientes').insert({
     'direccion': 'Libertador 1431, CABA',
     'telefono': '4545-4545',
     'atraccionesVisitadas': [{
+        'idEntrada': 12,
         'idAtraccion': 3,
         'nombre': 'Autitos Chocadores',
         'fecha': '2018-04-25 10:10:00'
     }, {
+        'idEntrada': 13,
         'idAtraccion': 4,
         'nombre': 'Twister',
         'fecha': '2018-04-25 10:50:00'
@@ -141,7 +148,6 @@ r.table('parques').insert({
             'numeroDeTarjeta': 4,
             'fecha': '2017-02-17 11:45:00'
         }],
-        'totalImporte': 160,
         'cantidadVisitas': 3
     }, {
         'idAtraccion': 2,
@@ -168,7 +174,6 @@ r.table('parques').insert({
             'numeroDeTarjeta': 4,
             'fecha': '2017-02-17 15:10:00'
         }],
-        'totalImporte': 60,
         'cantidadVisitas': 3
     }],
     'visitas': [{
@@ -282,15 +287,4 @@ r.table('facturas').insert({
     }]
 }).run()
 
-print '\n-----------------CLIENTES'
-for row in r.table('clientes').run():
-    print json.dumps(row, indent=2)
-print '\n-----------------EVENTOS'
-for row in r.table('eventos').run():
-    print json.dumps(row, indent=2)
-print '\n-----------------PARQUES'
-for row in r.table('parques').run():
-    print json.dumps(row, indent=2)
-print '\n-----------------FACTURAS'
-for row in r.table('facturas').run():
-    print json.dumps(row, indent=2)
+# r.table('clientes').rebalance().run()
