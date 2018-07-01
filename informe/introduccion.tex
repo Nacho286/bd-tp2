@@ -1,1 +1,15 @@
 \section{Introducción}
+
+\par Se cuenta con una base de datos SQL con datos de un sistema de tarjetas de acceso a parques, atracciones y eventos.
+Debido al gran aumento de datos acumulados se necesita diseñar una nueva base de datos para almacenar historiales de entradas, clientes y
+facturas y poder delegarle ciertas consultas pesadas. Se tiene un listado de consultas que se van a realizar para tener de referencia:
+
+\begin{itemize}
+  \item Atracciones visitadas por un cliente dado.
+  \item Ranking de atracciones por cantidad de visitas para un parque dado.
+  \item Top 5 de Eventos con mayor facturación.
+  \item Total de importes por atracción en un parque dado.
+\end{itemize}
+
+\par En el siguiente informe vamos a presentar una solución al problema planteado indicando cómo llegamos a la misma.
+Así mismo se incluyen resultados de unas pruebas de rendimiento de consultas con gran cantidad de datos.

@@ -33,7 +33,7 @@ De esta manera podemos consultar las atracciones que visitó un cliente de forma
 }
 \end{verbatim}
 
-\subsubsection{Evento}
+\subsection{Evento}
 \par Lo que hicimos fue embeber Evento y Entrada en Locacion, para tener en la misma estructura todos los eventos y sus visitas.
 Así podremos consultar por un evento y obtener las visitas, con fecha, que tuvo.
 \begin{verbatim}
@@ -71,7 +71,7 @@ Así podremos consultar por un evento y obtener las visitas, con fecha, que tuvo
 }
 \end{verbatim}
 
-\subsubsection{Parque}
+\subsection{Parque}
 \par Lo que hicimos fue embeber Entrada en Atracción y luego Atracción en Parque. Para lograr tener las atracciones (y las entradas a esas atracciones) en los parques.
 Luego embebimos Parque en Locación y Entrada en Locación. De esta forma tenemos, además de lo antes mencionado, las entradas a los parques incluidas.
 \par Con esto podemos consultar diréctamente por un parque y obtener sus datos informativos, sus visitas (con fecha) y atracciones (con visitas a ellas).
@@ -131,7 +131,7 @@ Luego embebimos Parque en Locación y Entrada en Locación. De esta forma tenemo
 }
 \end{verbatim}
 
-\subsubsection{Factura}
+\subsection{Factura}
 \par Lo que hicimos en este caso fue embeber Entrada en Factura. De esta manera consultamos una factura y tenemos el monto total y los ids de entradas para poder asociar luego.
 \begin{verbatim}
 {
