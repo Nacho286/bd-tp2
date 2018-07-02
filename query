@@ -1,4 +1,5 @@
-1)r.db('tp2').table('clientes').filter({'dni':13241345}).pluck({'atraccionesVisitadas':['nombre']})
+1)r.db('tp2').table('clientes').filter({'dni':13241345})("atraccionesVisitadas").map(function(val){
+  return val("nombre").distinct();})
 2)r.db('tp2').table('parques').filter({'idLocacion':1}).pluck({'atracciones':['nombre','cantidadVisitas']}).orderBy(r.row('atracciones')('cantidadVisitas'))
 3)r.db('tp2').table('eventos').orderBy(r.desc('facturacionTotal')).limit(5)
 4)r.db('tp2').table('parques').filter({'idLocacion':1}).pluck("atracciones").map(function(val){
