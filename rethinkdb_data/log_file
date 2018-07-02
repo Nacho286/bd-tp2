@@ -1,0 +1,74 @@
+2018-06-28T19:50:17.050568000 0.049784s notice: Recursively removing directory /Users/igrodriguez/Documents/Nacho/bases/bd-tp2/rethinkdb_data/tmp
+2018-06-28T19:50:17.052572000 0.051793s notice: Initializing directory /Users/igrodriguez/Documents/Nacho/bases/bd-tp2/rethinkdb_data
+2018-06-28T19:50:17.052692000 0.051908s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/igrodriguez/Documents/Nacho/bases/bd-tp2/rethinkdb_data' did not already exist or is empty.)
+2018-06-28T19:50:17.052742000 0.051957s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2018-06-28T19:50:17.058626000 0.057843s notice: Running on Darwin 16.7.0 x86_64
+2018-06-28T19:50:17.058690000 0.057905s notice: Loading data from directory /Users/igrodriguez/Documents/Nacho/bases/bd-tp2/rethinkdb_data
+2018-06-28T19:50:17.127853000 0.127068s info: Automatically using cache size of 1665 MB
+2018-06-28T19:50:17.128689000 0.127904s notice: Listening for intracluster connections on port 29015
+2018-06-28T19:50:17.131289000 0.130504s notice: Listening for client driver connections on port 28015
+2018-06-28T19:50:17.131542000 0.130758s notice: Listening for administrative HTTP connections on port 8080
+2018-06-28T19:50:17.131550000 0.130765s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2018-06-28T19:50:17.131564000 0.130779s notice: Listening on driver addresses: 127.0.0.1, ::1
+2018-06-28T19:50:17.131569000 0.130784s notice: Listening on http addresses: 127.0.0.1, ::1
+2018-06-28T19:50:17.131582000 0.130797s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2018-06-28T19:50:17.131594000 0.130809s notice: Server ready, "ARAR016275_lhu" 56d18cc1-3e5e-4140-ae74-68611dce1a6b
+2018-06-28T19:50:22.244099000 5.243404s notice: Server got SIGINT from pid 53742, uid 434041287; shutting down...
+2018-06-28T19:50:22.244267000 5.243571s notice: Shutting down client connections...
+2018-06-28T19:50:22.244405000 5.243709s notice: All client connections closed.
+2018-06-28T19:50:22.244419000 5.243723s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-06-28T19:50:22.250971000 5.250275s notice: Storage engine shut down.
+2018-06-28T19:50:26.475633000 0.011593s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2018-06-28T19:50:26.480665000 0.016621s notice: Running on Darwin 16.7.0 x86_64
+2018-06-28T19:50:26.480733000 0.016687s notice: Loading data from directory /Users/igrodriguez/Documents/Nacho/bases/bd-tp2/rethinkdb_data
+2018-06-28T19:50:26.499026000 0.034981s info: Automatically using cache size of 1651 MB
+2018-06-28T19:50:26.499645000 0.035600s notice: Listening for intracluster connections on port 29015
+2018-06-28T19:50:26.501728000 0.037683s notice: Listening for client driver connections on port 28015
+2018-06-28T19:50:26.501973000 0.037928s notice: Listening for administrative HTTP connections on port 8080
+2018-06-28T19:50:26.501980000 0.037935s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2018-06-28T19:50:26.501989000 0.037944s notice: Listening on driver addresses: 127.0.0.1, ::1
+2018-06-28T19:50:26.501993000 0.037947s notice: Listening on http addresses: 127.0.0.1, ::1
+2018-06-28T19:50:26.502001000 0.037955s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2018-06-28T19:50:26.502009000 0.037963s notice: Server ready, "ARAR016275_lhu" 56d18cc1-3e5e-4140-ae74-68611dce1a6b
+2018-06-30T20:34:29.020360000 0.012530s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2018-06-30T20:34:29.028536000 0.020702s notice: Running on Darwin 16.7.0 x86_64
+2018-06-30T20:34:29.028616000 0.020781s notice: Loading data from directory /Users/igrodriguez/Documents/Nacho/bases/bd-tp2/rethinkdb_data
+2018-06-30T20:34:29.046852000 0.039017s info: Automatically using cache size of 2895 MB
+2018-06-30T20:34:29.047537000 0.039702s notice: Listening for intracluster connections on port 29015
+2018-06-30T20:34:29.049633000 0.041798s notice: Listening for client driver connections on port 28015
+2018-06-30T20:34:29.049891000 0.042056s notice: Listening for administrative HTTP connections on port 8080
+2018-06-30T20:34:29.049903000 0.042068s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2018-06-30T20:34:29.049912000 0.042077s notice: Listening on driver addresses: 127.0.0.1, ::1
+2018-06-30T20:34:29.049915000 0.042081s notice: Listening on http addresses: 127.0.0.1, ::1
+2018-06-30T20:34:29.049924000 0.042089s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2018-06-30T20:34:29.049932000 0.042097s notice: Server ready, "ARAR016275_lhu" 56d18cc1-3e5e-4140-ae74-68611dce1a6b
+2018-07-01T00:38:30.264008000 3079.851195s notice: Server got SIGINT from pid 1087, uid 434041287; shutting down...
+2018-07-01T00:38:30.264184000 3079.851370s notice: Shutting down client connections...
+2018-07-01T00:38:30.264353000 3079.851540s notice: All client connections closed.
+2018-07-01T00:38:30.264370000 3079.851556s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-07-01T00:38:30.264867000 3079.852054s notice: Storage engine shut down.
+2018-07-01T14:48:36.680326000 0.062830s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2018-07-01T14:48:36.687588000 0.070087s notice: Running on Darwin 16.7.0 x86_64
+2018-07-01T14:48:36.687661000 0.070159s notice: Loading data from directory /Users/igrodriguez/Documents/Nacho/bases/bd-tp2/rethinkdb_data
+2018-07-01T14:48:36.709057000 0.091556s info: Automatically using cache size of 4149 MB
+2018-07-01T14:48:36.709722000 0.092220s notice: Listening for intracluster connections on port 29015
+2018-07-01T14:48:36.712798000 0.095296s notice: Listening for client driver connections on port 28015
+2018-07-01T14:48:36.712988000 0.095486s notice: Listening for administrative HTTP connections on port 8080
+2018-07-01T14:48:36.712993000 0.095491s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2018-07-01T14:48:36.713002000 0.095499s notice: Listening on driver addresses: 127.0.0.1, ::1
+2018-07-01T14:48:36.713005000 0.095503s notice: Listening on http addresses: 127.0.0.1, ::1
+2018-07-01T14:48:36.713013000 0.095511s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2018-07-01T14:48:36.713022000 0.095519s notice: Server ready, "ARAR016275_lhu" 56d18cc1-3e5e-4140-ae74-68611dce1a6b
+2018-07-01T14:48:42.364856000 5.747533s info: Table 6f712ddf-f302-498b-b18b-af6cf416f046: Starting a new Raft election for term 1.
+2018-07-01T14:48:42.365308000 5.747985s info: Table 6f712ddf-f302-498b-b18b-af6cf416f046: Added replica on this server.
+2018-07-01T14:48:42.372391000 5.755068s info: Table 6f712ddf-f302-498b-b18b-af6cf416f046: This server is Raft leader for term 1. Latest log index is 0.
+2018-07-01T14:48:42.961015000 6.343692s info: Table 9d9a2468-779e-4672-8cd7-47daf013f2e7: Starting a new Raft election for term 1.
+2018-07-01T14:48:42.961151000 6.343828s info: Table 9d9a2468-779e-4672-8cd7-47daf013f2e7: Added replica on this server.
+2018-07-01T14:48:42.966948000 6.349625s info: Table 9d9a2468-779e-4672-8cd7-47daf013f2e7: This server is Raft leader for term 1. Latest log index is 0.
+2018-07-01T14:48:43.546559000 6.929237s info: Table 2990dbed-6a7e-4f4a-8b06-ad8e6a9fa0d3: Starting a new Raft election for term 1.
+2018-07-01T14:48:43.546885000 6.929562s info: Table 2990dbed-6a7e-4f4a-8b06-ad8e6a9fa0d3: Added replica on this server.
+2018-07-01T14:48:43.553565000 6.936242s info: Table 2990dbed-6a7e-4f4a-8b06-ad8e6a9fa0d3: This server is Raft leader for term 1. Latest log index is 0.
+2018-07-01T14:48:43.905160000 7.287882s info: Table 2fa61e4c-e054-4fd9-aafb-8c96b7b06eef: Starting a new Raft election for term 1.
+2018-07-01T14:48:43.905576000 7.288298s info: Table 2fa61e4c-e054-4fd9-aafb-8c96b7b06eef: Added replica on this server.
+2018-07-01T14:48:43.912862000 7.295584s info: Table 2fa61e4c-e054-4fd9-aafb-8c96b7b06eef: This server is Raft leader for term 1. Latest log index is 0.
+2018-07-01T14:48:44.406997000 7.789719s info: Table 6f712ddf-f302-498b-b18b-af6cf416f046: Configuration is changing.
