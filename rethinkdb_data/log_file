@@ -72,3 +72,8 @@
 2018-07-01T14:48:43.905576000 7.288298s info: Table 2fa61e4c-e054-4fd9-aafb-8c96b7b06eef: Added replica on this server.
 2018-07-01T14:48:43.912862000 7.295584s info: Table 2fa61e4c-e054-4fd9-aafb-8c96b7b06eef: This server is Raft leader for term 1. Latest log index is 0.
 2018-07-01T14:48:44.406997000 7.789719s info: Table 6f712ddf-f302-498b-b18b-af6cf416f046: Configuration is changing.
+2018-07-02T10:12:08.917469000 21808.066442s notice: Server got SIGINT from pid 1087, uid 434041287; shutting down...
+2018-07-02T10:12:08.917810000 21808.066779s notice: Shutting down client connections...
+2018-07-02T10:12:08.918046000 21808.067015s notice: All client connections closed.
+2018-07-02T10:12:08.918056000 21808.067024s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-07-02T10:12:08.949564000 21808.098534s notice: Storage engine shut down.
