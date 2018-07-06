@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 import rethinkdb as r
-import os
 import sys
 
 r.connect('localhost', 28015, db='tp2').repl()
