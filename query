@@ -4,4 +4,8 @@
 3)r.db('tp2').table('eventos').orderBy(r.desc('facturacionTotal')).limit(5)
 4)r.db('tp2').table('parques').filter({'idLocacion':1})("atracciones").map(function(x)
   {return x.pluck("nombre",{"visitas":"precio"})})
-    
+5)r.db('tp2').table('clientes').filter({'dni':13241345})("atraccionesVisitadas").reduce(function(y){
+  return y
+}).map(function (x){
+  return r([]).append(x("nombre"))}).reduce(function(x,y)
+  {return x.setUnion(y)})

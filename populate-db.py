@@ -175,6 +175,32 @@ r.table('parques').insert({
             'fecha': '2017-02-17 15:10:00'
         }],
         'cantidadVisitas': 3
+    }, {
+        'idAtraccion': 3,
+        'nombre': 'Montaña',
+        'precio': 50,
+        'minimoEdad': 10,
+        'minimoAltura': 140,
+        'visitas': [{
+            'idEntrada': 9,
+            'dni': 13241345,
+            'precio': 20,
+            'numeroDeTarjeta': 1,
+            'fecha': '2017-01-16 11:30:00'
+        }, {
+            'idEntrada': 10,
+            'dni': 13241345,
+            'precio': 50,
+            'numeroDeTarjeta': 1,
+            'fecha': '2017-01-16 13:00:00'
+        }, {
+            'idEntrada': 11,
+            'dni': 13241345,
+            'precio': 70,
+            'numeroDeTarjeta': 4,
+            'fecha': '2017-02-17 11:45:00'
+        }],
+        'cantidadVisitas': 3
     }],
     'visitas': [{
         'idEntrada': 1,
