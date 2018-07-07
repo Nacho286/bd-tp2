@@ -177,7 +177,7 @@ r.table('parques').insert({
         'cantidadVisitas': 3
     }, {
         'idAtraccion': 3,
-        'nombre': 'Montaña',
+        'nombre': 'Montana',
         'precio': 50,
         'minimoEdad': 10,
         'minimoAltura': 140,

@@ -8,4 +8,5 @@ persona = int(sys.argv[1])
 
 rows = r.db('tp2').table('clientes').filter({'dni':persona})["atraccionesVisitadas"].reduce(lambda y: y).map(lambda val:r.expr([]).append(val["nombre"])).reduce(lambda x,y :x.set_union(y)).run()
 
-print(rows)
+for atraccion in rows:
+    print(atraccion)
